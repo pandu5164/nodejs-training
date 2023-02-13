@@ -26,11 +26,22 @@ const requestHandler = (req,res) => {
                 res.setHeader('Location', '/');
                 return res.end();
             });
+    
+            // res.statusCode = 302; // for redirection code
+            // res.setHeader('Location', '/');
+            // return res.end();
         });
          
     }
     // process.exit() // to exit the request listening of server === shutting down the program
     res.setHeader('Content-Type', 'text/html');
+    
+    //default way to send response:
+    res.write('<html>');
+    res.write('<head><title>My First Page</title></head>');
+    res.write('<body><h1>Hello from my nodejs server</body>');
+    res.write('</html>');
+    res.end(); // tell that response has been written by server
 }
 
 // module.exports = requestHandler;
