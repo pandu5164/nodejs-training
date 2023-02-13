@@ -1,0 +1,23 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Complete Node js Guide by Pavan Kumar Z learnt from Udemy",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pandu5164/nodejs-training.git"
+  },
+  "author": "Pavan Kumar Z",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pandu5164/nodejs-training/issues"
+  },
+  "homepage": "https://github.com/pandu5164/nodejs-training#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
