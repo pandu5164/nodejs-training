@@ -1,4 +1,4 @@
-const fs = require('fs'); // file server for storing and doing file manipulations
+const fs = require('fs');
 
 const requestHandler = (req,res) => {
     const url = req.url;
@@ -32,12 +32,6 @@ const requestHandler = (req,res) => {
     // process.exit() // to exit the request listening of server === shutting down the program
     res.setHeader('Content-Type', 'text/html');
 }
-
-// module.exports = requestHandler;
-
-// module.exports.handler = requestHandler;
-
-// exports.handler = requestHandler;
 
 module.exports = {
     handler: requestHandler,
